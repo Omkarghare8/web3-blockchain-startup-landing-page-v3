@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NexaChain - Revolutionary Web3 & Blockchain Solutions for the Future of Decentralized Technology">
+    <meta name="keywords" content="Web3, Blockchain, DeFi, NFT, Cryptocurrency, Smart Contracts, Decentralized">
+    <meta name="author" content="NexaChain">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="NexaChain - Future of Web3">
+    <meta property="og:description" content="Revolutionary Web3 & Blockchain Solutions">
+    <meta property="og:type" content="website">
+    
+    <title>NexaChain | Revolutionary Web3 & Blockchain Platform</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- COPYRIGHT SIGNATURE: Omkar R. Ghare | Front-End & Web Developer | Designed and Built January 2026 -->
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">NEXACHAIN</div>
+            <div class="loader-container">
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+                <div class="loader-core"></div>
+            </div>
+            <div class="loader-text">Initializing Blockchain</div>
+            <div class="loader-progress">
+                <div class="loader-progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">
+            <div class="nav-logo-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+            </div>
+            NEXACHAIN
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#tokenomics" class="nav-link">Tokenomics</a></li>
+            <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+            <li><a href="#team" class="nav-link">Team</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <div class="theme-toggle" id="themeToggle">
+                <div class="theme-toggle-ball">
+                    <svg class="sun-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                </div>
+            </div>
+            <a href="#cta" class="nav-cta">Get Started</a>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient hero-gradient-1"></div>
+            <div class="hero-gradient hero-gradient-2"></div>
+            <div class="hero-gradient hero-gradient-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge fade-in">
+                    <span class="hero-badge-dot"></span>
+                    Web3 Revolution is Here
+                </div>
+                <h1 class="hero-title fade-in stagger-1">
+                    <span class="hero-title-line">Building The</span>
+                    <span class="hero-title-line hero-title-gradient">Future of</span>
+                    <span class="hero-title-line hero-title-gradient">Decentralization</span>
+                </h1>
+                <p class="hero-description fade-in stagger-2">
+                    Experience the next generation of blockchain technology. Secure, scalable, and sustainable solutions for the decentralized economy.
+                </p>
+                <div class="hero-buttons fade-in stagger-3">
+                    <a href="#cta" class="btn btn-primary">
+                        Launch App
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats fade-in stagger-4">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" data-count="50000">$50M+</div>
+                        <div class="hero-stat-label">Total Value Locked</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">150K+</div>
+                        <div class="hero-stat-label">Active Users</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">99.9%</div>
+                        <div class="hero-stat-label">Uptime</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-3d-container">
+                    <div class="hero-cube">
+                        <div class="cube-face cube-face-front">N</div>
+                        <div class="cube-face cube-face-back">X</div>
+                        <div class="cube-face cube-face-right">C</div>
+                        <div class="cube-face cube-face-left">H</div>
+                        <div class="cube-face cube-face-top">A</div>
+                        <div class="cube-face cube-face-bottom">I</div>
+                    </div>
+                    <div class="hero-orbit">
+                        <div class="orbit-dot"></div>
+                    </div>
+                    <div class="hero-orbit hero-orbit-2">
+                        <div class="orbit-dot"></div>
+                    </div>
+                    <div class="hero-orbit hero-orbit-3">
+                        <div class="orbit-dot"></div>
+                    </div>
+                </div>
+
+                <div class="floating-element floating-element-1 fade-in">
+                    <div class="floating-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div class="floating-text">Smart Contracts</div>
+                    <div class="floating-subtext">Automated & Secure</div>
+                </div>
+
+                <div class="floating-element floating-element-2 fade-in stagger-2">
+                    <div class="floating-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="floating-text">Secure Protocol</div>
+                    <div class="floating-subtext">Military Grade</div>
+                </div>
+
+                <div class="floating-element floating-element-3 fade-in stagger-3">
+                    <div class="floating-icon">
+                        <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <div class="floating-text">Lightning Fast</div>
+                    <div class="floating-subtext">100K TPS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <div class="partners">
+        <div class="partners-container">
+            <p class="partners-label">Trusted by Industry Leaders</p>
+            <div class="partners-wrapper">
+                <div class="partners-track">
+                    <div class="partner-logo">◆ Ethereum</div>
+                    <div class="partner-logo">◇ Polygon</div>
+                    <div class="partner-logo">◈ Chainlink</div>
+                    <div class="partner-logo">◆ Binance</div>
+                    <div class="partner-logo">◇ Solana</div>
+                    <div class="partner-logo">◈ Avalanche</div>
+                    <div class="partner-logo">◆ Polkadot</div>
+                    <div class="partner-logo">◇ Cosmos</div>
+                    <div class="partner-logo">◈ Near</div>
+                    <div class="partner-logo">◆ Ethereum</div>
+                    <div class="partner-logo">◇ Polygon</div>
+                    <div class="partner-logo">◈ Chainlink</div>
+                    <div class="partner-logo">◆ Binance</div>
+                    <div class="partner-logo">◇ Solana</div>
+                    <div class="partner-logo">◈ Avalanche</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge fade-in">✦ Core Features</span>
+                <h2 class="section-title fade-in stagger-1">
+                    Revolutionary <span class="section-title-gradient">Technology</span>
+                </h2>
+                <p class="section-description fade-in stagger-2">
+                    Discover the cutting-edge features that make NexaChain the most advanced blockchain platform for the future of decentralized applications.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card fade-in">
+                    <div class="feature-card-content">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3 class="feature-title">Military-Grade Security</h3>
+                        <p class="feature-description">
+                            Advanced cryptographic protocols with multi-layer security architecture. Your assets are protected by state-of-the-art encryption.
+                        </p>
+                        <a href="#" class="feature-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="feature-card fade-in stagger-1">
+                    <div class="feature-card-content">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <h3 class="feature-title">Lightning Performance</h3>
+                        <p class="feature-description">
+                            Process over 100,000 transactions per second with near-instant finality. Experience the speed of next-generation blockchain.
+                        </p>
+                        <a href="#" class="feature-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="feature-card fade-in stagger-2">
+                    <div class="feature-card-content">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 class="feature-title">Smart Contracts 2.0</h3>
+                        <p class="feature-description">
+                            Deploy self-executing contracts with advanced logic capabilities. Automate complex business processes without intermediaries.
+                        </p>
+                        <a href="#" class="feature-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="feature-card fade-in stagger-3">
+                    <div class="feature-card-content">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <h3 class="feature-title">Cross-Chain Bridge</h3>
+                        <p class="feature-description">
+                            Seamlessly transfer assets across multiple blockchain networks. True interoperability for the multi-chain future.
+                        </p>
+                        <a href="#" class="feature-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="feature-card fade-in stagger-4">
+                    <div class="feature-card-content">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="feature-title">DAO Governance</h3>
+                        <p class="feature-description">
+                            Participate in decentralized governance with voting rights. Shape the future of the protocol with community-driven decisions.
+                        </p>
+                        <a href="#" class="feature-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="feature-card fade-in stagger-5">
+                    <div class="feature-card-content">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        </div>
+                        <h3 class="feature-title">Developer SDK</h3>
+                        <p class="feature-description">
+                            Build powerful dApps with our comprehensive SDK. Extensive documentation and tools for rapid development.
+                        </p>
+                        <a href="#" class="feature-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge fade-in">✦ Process</span>
+                <h2 class="section-title fade-in stagger-1">
+                    How <span class="section-title-gradient">It Works</span>
+                </h2>
+                <p class="section-description fade-in stagger-2">
+                    Get started with NexaChain in just a few simple steps. Our streamlined onboarding process ensures you can begin building immediately.
+                </p>
+            </div>
+
+            <div class="steps-container">
+                <div class="steps-line"></div>
+
+                <div class="step-item" data-step="1">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Connect Your Wallet</h3>
+                        <p class="step-description">
+                            Link your preferred Web3 wallet to access the NexaChain ecosystem. We support MetaMask, WalletConnect, Coinbase Wallet, and more.
+                        </p>
+                        <div class="step-features">
+                            <span class="step-feature">MetaMask</span>
+                            <span class="step-feature">WalletConnect</span>
+                            <span class="step-feature">Ledger</span>
+                            <span class="step-feature">Trezor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-item" data-step="2">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Stake Your Tokens</h3>
+                        <p class="step-description">
+                            Deposit your NXC tokens to start earning rewards. Choose from flexible staking options with competitive APY rates up to 25%.
+                        </p>
+                        <div class="step-features">
+                            <span class="step-feature">Up to 25% APY</span>
+                            <span class="step-feature">Flexible Terms</span>
+                            <span class="step-feature">Auto-compound</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-item" data-step="3">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Participate in Governance</h3>
+                        <p class="step-description">
+                            Use your staked tokens to vote on proposals and help shape the future of NexaChain. Every voice matters in our decentralized ecosystem.
+                        </p>
+                        <div class="step-features">
+                            <span class="step-feature">Proposal Voting</span>
+                            <span class="step-feature">Delegation</span>
+                            <span class="step-feature">Rewards</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-item" data-step="4">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Build & Deploy dApps</h3>
+                        <p class="step-description">
+                            Leverage our powerful SDK to build decentralized applications. Deploy smart contracts and scale your projects on our high-performance network.
+                        </p>
+                        <div class="step-features">
+                            <span class="step-feature">SDK Access</span>
+                            <span class="step-feature">API Integration</span>
+                            <span class="step-feature">Developer Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge fade-in">✦ Solutions</span>
+                <h2 class="section-title fade-in stagger-1">
+                    Enterprise <span class="section-title-gradient">Solutions</span>
+                </h2>
+                <p class="section-description fade-in stagger-2">
+                    Comprehensive blockchain solutions designed for enterprises of all sizes. From startups to Fortune 500 companies.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card service-card-large fade-in">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                        <h3 class="service-title">DeFi Infrastructure</h3>
+                        <p class="service-description">
+                            Build robust decentralized finance applications with our battle-tested infrastructure. From DEXs to lending protocols, we provide the foundation for your DeFi vision.
+                        </p>
+                        <ul class="service-list">
+                            <li class="service-list-item">Automated Market Makers (AMM)</li>
+                            <li class="service-list-item">Lending & Borrowing Protocols</li>
+                            <li class="service-list-item">Yield Optimization Strategies</li>
+                            <li class="service-list-item">Cross-chain Liquidity Pools</li>
+                        </ul>
+                    </div>
+                    <div class="service-3d">
+                        <div class="service-sphere"></div>
+                        <div class="service-rings"></div>
+                        <div class="service-rings"></div>
+                    </div>
+                </article>
+
+                <article class="service-card fade-in stagger-1">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                        </div>
+                        <h3 class="service-title">NFT Marketplace</h3>
+                        <p class="service-description">
+                            Launch your own NFT marketplace with our turnkey solution. Support for multiple standards including ERC-721 and ERC-1155.
+                        </p>
+                        <ul class="service-list">
+                            <li class="service-list-item">Custom Marketplace Design</li>
+                            <li class="service-list-item">Royalty Management</li>
+                            <li class="service-list-item">Lazy Minting Support</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-card fade-in stagger-2">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 class="service-title">Enterprise Blockchain</h3>
+                        <p class="service-description">
+                            Private and permissioned blockchain networks for enterprise applications. Enhanced security and compliance features.
+                        </p>
+                        <ul class="service-list">
+                            <li class="service-list-item">Custom Network Setup</li>
+                            <li class="service-list-item">Compliance Tools</li>
+                            <li class="service-list-item">SLA Guarantees</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section class="tokenomics" id="tokenomics">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge fade-in">✦ Token Economics</span>
+                <h2 class="section-title fade-in stagger-1">
+                    NXC <span class="section-title-gradient">Tokenomics</span>
+                </h2>
+                <p class="section-description fade-in stagger-2">
+                    Transparent and sustainable token distribution designed for long-term ecosystem growth and community benefit.
+                </p>
+            </div>
+
+            <div class="tokenomics-content">
+                <div class="tokenomics-chart fade-in-left">
+                    <svg viewBox="0 0 200 200" class="chart-ring">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00f5d4"/>
+                                <stop offset="100%" style="stop-color:#7b2cbf"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Community: 30% -->
+                        <circle cx="100" cy="100" r="80" fill="none" stroke="#00f5d4" stroke-width="25" stroke-dasharray="150.8 502.65" stroke-dashoffset="0" transform="rotate(-90 100 100)"/>
+                        <!-- Development: 25% -->
+                        <circle cx="100" cy="100" r="80" fill="none" stroke="#7b2cbf" stroke-width="25" stroke-dasharray="125.66 502.65" stroke-dashoffset="-150.8" transform="rotate(-90 100 100)"/>
+                        <!-- Team: 15% -->
+                        <circle cx="100" cy="100" r="80" fill="none" stroke="#f72585" stroke-width="25" stroke-dasharray="75.4 502.65" stroke-dashoffset="-276.46" transform="rotate(-90 100 100)"/>
+                        <!-- Marketing: 15% -->
+                        <circle cx="100" cy="100" r="80" fill="none" stroke="#4cc9f0" stroke-width="25" stroke-dasharray="75.4 502.65" stroke-dashoffset="-351.86" transform="rotate(-90 100 100)"/>
+                        <!-- Reserve: 15% -->
+                        <circle cx="100" cy="100" r="80" fill="none" stroke="#9b5de5" stroke-width="25" stroke-dasharray="75.4 502.65" stroke-dashoffset="-427.26" transform="rotate(-90 100 100)"/>
+                    </svg>
+                    <div class="chart-center">
+                        <div class="chart-total">1B</div>
+                        <div class="chart-label">Total Supply</div>
+                    </div>
+                </div>
+
+                <div class="tokenomics-info fade-in-right">
+                    <div class="token-item">
+                        <div class="token-color" style="background: #00f5d4;"></div>
+                        <div class="token-details">
+                            <div class="token-name">Community & Rewards</div>
+                            <div class="token-description">Staking rewards, airdrops, ecosystem incentives</div>
+                        </div>
+                        <div class="token-percentage">30%</div>
+                    </div>
+
+                    <div class="token-item">
+                        <div class="token-color" style="background: #7b2cbf;"></div>
+                        <div class="token-details">
+                            <div class="token-name">Development</div>
+                            <div class="token-description">Protocol development and infrastructure</div>
+                        </div>
+                        <div class="token-percentage">25%</div>
+                    </div>
+
+                    <div class="token-item">
+                        <div class="token-color" style="background: #f72585;"></div>
+                        <div class="token-details">
+                            <div class="token-name">Team & Advisors</div>
+                            <div class="token-description">4-year vesting with 1-year cliff</div>
+                        </div>
+                        <div class="token-percentage">15%</div>
+                    </div>
+
+                    <div class="token-item">
+                        <div class="token-color" style="background: #4cc9f0;"></div>
+                        <div class="token-details">
+                            <div class="token-name">Marketing & Partnerships</div>
+                            <div class="token-description">Growth initiatives and strategic partnerships</div>
+                        </div>
+                        <div class="token-percentage">15%</div>
+                    </div>
+
+                    <div class="token-item">
+                        <div class="token-color" style="background: #9b5de5;"></div>
+                        <div class="token-details">
+                            <div class="token-name">Reserve Fund</div>
+                            <div class="token-description">Emergency fund and future initiatives</div>
+                        </div>
+                        <div class="token-percentage">15%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap" id="roadmap">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge fade-in">✦ Roadmap</span>
+                <h2 class="section-title fade-in stagger-1">
+                    Development <span class="section-title-gradient">Timeline</span>
+                </h2>
+                <p class="section-description fade-in stagger-2">
+                    Our strategic roadmap outlines key milestones and deliverables as we build the future of decentralized technology.
+                </p>
+            </div>
+
+            <div class="roadmap-timeline fade-in">
+                <div class="roadmap-line">
+                    <div class="roadmap-line-progress"></div>
+                </div>
+                <div class="roadmap-items">
+                    <div class="roadmap-item completed">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-card">
+                            <span class="roadmap-quarter">Q1 2024</span>
+                            <h3 class="roadmap-title">Foundation</h3>
+                            <ul class="roadmap-list">
+                                <li>Protocol Architecture Design</li>
+                                <li>Core Team Assembly</li>
+                                <li>Seed Funding Round</li>
+                                <li>Whitepaper Release</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-item active">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-card">
+                            <span class="roadmap-quarter">Q2 2024</span>
+                            <h3 class="roadmap-title">Development</h3>
+                            <ul class="roadmap-list">
+                                <li>Testnet Launch</li>
+                                <li>Smart Contract Audits</li>
+                                <li>Developer SDK Beta</li>
+                                <li>Community Building</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-card">
+                            <span class="roadmap-quarter">Q3 2024</span>
+                            <h3 class="roadmap-title">Launch</h3>
+                            <ul class="roadmap-list">
+                                <li>Mainnet Launch</li>
+                                <li>Token Generation Event</li>
+                                <li>DEX Listings</li>
+                                <li>Staking Platform Live</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-card">
+                            <span class="roadmap-quarter">Q4 2024</span>
+                            <h3 class="roadmap-title">Expansion</h3>
+                            <ul class="roadmap-list">
+                                <li>Cross-chain Bridge</li>
+                                <li>DAO Governance Launch</li>
+                                <li>Enterprise Partnerships</li>
+                                <li>Global Marketing Campaign</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge fade-in">✦ Our Team</span>
+                <h2 class="section-title fade-in stagger-1">
+                    Meet The <span class="section-title-gradient">Visionaries</span>
+                </h2>
+                <p class="section-description fade-in stagger-2">
+                    Industry veterans and blockchain pioneers working together to build the decentralized future.
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <article class="team-card fade-in">
+                    <div class="team-avatar">
+                        <div class="team-avatar-inner">AS</div>
+                    </div>
+                    <h3 class="team-name">Alex Sterling</h3>
+                    <p class="team-role">CEO & Co-Founder</p>
+                    <p class="team-bio">Former VP at Goldman Sachs. 15+ years in fintech and blockchain innovation.</p>
+                    <div class="team-social">
+                        <a href="#" class="team-social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="team-social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="team-card fade-in stagger-1">
+                    <div class="team-avatar">
+                        <div class="team-avatar-inner">MC</div>
+                    </div>
+                    <h3 class="team-name">Maya Chen</h3>
+                    <p class="team-role">CTO & Co-Founder</p>
+                    <p class="team-bio">Ex-Google engineer. PhD in Cryptography from MIT. Core contributor to Ethereum.</p>
+                    <div class="team-social">
+                        <a href="#" class="team-social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="team-social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="team-card fade-in stagger-2">
+                    <div class="team-avatar">
+                        <div class="team-avatar-inner">RK</div>
+                    </div>
+                    <h3 class="team-name">Ryan Kim</h3>
+                    <p class="team-role">Head of Product</p>
+                    <p class="team-bio">Former Product Lead at Coinbase. 10+ years building fintech products at scale.</p>
+                    <div class="team-social">
+                        <a href="#" class="team-social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="team-social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="team-card fade-in stagger-3">
+                    <div class="team-avatar">
+                        <div class="team-avatar-inner">SP</div>
+                    </div>
+                    <h3 class="team-name">Sarah Parker</h3>
+                    <p class="team-role">Head of Marketing</p>
+                    <p class="team-bio">Marketing veteran from Binance and Kraken. Expert in Web3 growth strategies.</p>
+                    <div class="team-social">
+                        <a href="#" class="team-social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="team-social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge fade-in">✦ FAQ</span>
+                <h2 class="section-title fade-in stagger-1">
+                    Frequently Asked <span class="section-title-gradient">Questions</span>
+                </h2>
+                <p class="section-description fade-in stagger-2">
+                    Find answers to common questions about NexaChain, our technology, and how to get started.
+                </p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>What is NexaChain?</span>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            NexaChain is a next-generation blockchain platform designed for high-performance decentralized applications. We combine cutting-edge cryptography with innovative consensus mechanisms to deliver unparalleled speed, security, and scalability for Web3 applications.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in stagger-1">
+                    <div class="faq-question">
+                        <span>How do I stake NXC tokens?</span>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Staking is simple: connect your Web3 wallet, navigate to the Staking section, choose your preferred staking pool and duration, then confirm the transaction. You'll start earning rewards immediately, with APY rates up to 25% depending on your lock-up period.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in stagger-2">
+                    <div class="faq-question">
+                        <span>What makes NexaChain different?</span>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            NexaChain features our proprietary Quantum-Proof consensus algorithm, achieving 100,000+ TPS with sub-second finality. Our unique architecture enables seamless cross-chain communication while maintaining enterprise-grade security and full EVM compatibility.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in stagger-3">
+                    <div class="faq-question">
+                        <span>Is the platform audited?</span>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes, NexaChain has undergone comprehensive security audits by leading firms including CertiK, Trail of Bits, and OpenZeppelin. All audit reports are publicly available on our GitHub repository for complete transparency.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in stagger-4">
+                    <div class="faq-question">
+                        <span>How can I build on NexaChain?</span>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Developers can get started with our comprehensive SDK and documentation. We support Solidity smart contracts, offer extensive APIs, and provide grants for promising projects. Join our Developer Discord for support and collaboration opportunities.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in stagger-5">
+                    <div class="faq-question">
+                        <span>Where can I buy NXC tokens?</span>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            NXC tokens are available on major centralized exchanges including Binance, Coinbase, and Kraken, as well as decentralized exchanges like Uniswap and our native NexaSwap. Always verify contract addresses through our official channels.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="cta-bg">
+            <div class="cta-gradient cta-gradient-1"></div>
+            <div class="cta-gradient cta-gradient-2"></div>
+        </div>
+        <div class="section-container">
+            <div class="cta-content">
+                <h2 class="cta-title fade-in">
+                    Ready to Build the <span class="section-title-gradient">Future?</span>
+                </h2>
+                <p class="cta-description fade-in stagger-1">
+                    Join thousands of developers and enterprises already building on NexaChain. Get early access to our platform and exclusive benefits.
+                </p>
+                <form class="cta-form fade-in stagger-2" id="ctaForm">
+                    <input type="email" class="cta-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">
+                        Get Early Access
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                </form>
+                <div class="cta-buttons fade-in stagger-3" style="margin-top: 30px;">
+                    <a href="#" class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        View on GitHub
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        Join Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">NEXACHAIN</div>
+                    <p class="footer-description">
+                        Building the infrastructure for the decentralized future. Secure, scalable, and sustainable blockchain solutions for everyone.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Discord">
+                            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Features</a></li>
+                        <li><a href="#" class="footer-link">Tokenomics</a></li>
+                        <li><a href="#" class="footer-link">Roadmap</a></li>
+                        <li><a href="#" class="footer-link">Security</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Developers</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Documentation</a></li>
+                        <li><a href="#" class="footer-link">API Reference</a></li>
+                        <li><a href="#" class="footer-link">SDK</a></li>
+                        <li><a href="#" class="footer-link">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Press Kit</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Community</a></li>
+                        <li><a href="#" class="footer-link">Support</a></li>
+                        <li><a href="#" class="footer-link">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Omkar R. Ghare — Front-End & Web Developer. Designed and built January 2026. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" class="footer-legal-link">Privacy Policy</a>
+                    <a href="#" class="footer-legal-link">Terms of Service</a>
+                    <a href="#" class="footer-legal-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
